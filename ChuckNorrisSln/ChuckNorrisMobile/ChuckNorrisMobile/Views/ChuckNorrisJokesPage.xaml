@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChuckNorrisMobile.Views.ChuckNorrisJokesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  HeightRequest="150" FontAttributes="Bold" FontSize="Medium" Text="Chuck Norris Joke Generator"/>
+            <Label x:Name="JokeLabel" HeightRequest="150" Text="{Binding Joke}"/>
+            <Button x:Name="JokeButton" Text="Click for a Joke" Command="{Binding ShowJokeCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
